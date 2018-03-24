@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -9,4 +9,34 @@ a {
 .parallax-window {
   min-height: 500px;
   background: transparent;
+}
+
+.white-font {
+  color: antiquewhite;
+}
+
+/* PADDING */
+
+.padding-top-large {
+  padding-top: 120px;
+}
+
+.padding-top-medium {
+  padding-top: 80px;
+}
+
+.padding-top-small {
+  padding-top: 25px;
+}
+
+.padding-bottom-large {
+  padding-bottom: 120px;
+}
+
+.padding-bottom-medium {
+  padding-bottom: 80px;
+}
+
+.padding-bottom-small {
+  padding-bottom: 40px;
 }

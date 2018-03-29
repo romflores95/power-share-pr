@@ -11,9 +11,14 @@ router.get('/faqs', function(req, res, next) {
   res.render('faqs', { title: 'FAQs' });
 });
 
-/* GET Conact page. */
+/* GET Contact page. */
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Us' });
+});
+
+/* GET Privacy page. */
+router.get('/privacypolicy', function(req, res, next) {
+  res.render('privacypolicy', { title: 'Privacy Policy' });
 });
 
 module.exports = router;

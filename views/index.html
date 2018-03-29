@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Power Share</title>
+    <title>Power Share | Home</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
@@ -9,21 +9,24 @@
   <body>
 
     <!-- navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="/">Power Share</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Español <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="/?hl=es">Español <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FAQs</a>
+            <a class="nav-link" href="/#team">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#team">Team</a>
+            <a class="nav-link" href="/faqs">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -33,7 +36,7 @@
 
 
     <!-- Intro block-->
-    <div class="parallax-window" data-parallax="scroll" data-image-src="/images/blue-sky-panels.jpg">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="/images/stock/blue-sky-panels.jpg" data-speed="0.7">
       <div class="container white-font text-left padding-top-medium padding-bottom-medium">
 
         <div class="row padding-bottom-small">
@@ -55,7 +58,7 @@
         <div class="row">
           <div class="col">
             <!-- TODO add padding/margin -->
-            <button type="button" class="btn btn-success btn-lg">Contact Us Today!</button>
+            <a href="/contact"><button type="button" class="btn btn-success btn-lg">Get Started Today!</button></a>
 
           </div>
         </div>
@@ -87,7 +90,7 @@
 
             <div class="row padding-bottom-small">
               <div class="col">
-                <img src="/images/solar-panel.png">
+                <img src="/images/icons/solar-panel.png">
               </div>
             </div>
 
@@ -103,15 +106,22 @@
 
               <div class="row padding-bottom-small">
                 <div class="col">
-                  <img src="/images/electricity.png">
+                  <img src="/images/icons/electricity.png">
                 </div>
               </div>
 
-              <div class="row">
+              <div class="row padding-bottom-small">
                 <div class="col">
                   <p class="font-weight-bold">Equipment Power Share's embedded systems and algorithms keep track of power transmitted between two houses</p>
                 </div>
               </div>
+
+              <div class="row">              
+                  <div class="col padding-bottom-small">
+                    <a href="/faqs#technology"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
+                  </div>
+              </div>
+
             </div>
 
             <!-- House B -->
@@ -119,19 +129,52 @@
 
               <div class="row padding-bottom-small">
                 <div class="col">
-                  <img src="/images/house.png">
+                  <img src="/images/icons/house.png">
                 </div>
               </div>
 
               <div class="row">
                 <div class="col">
-                  <p class="font-weight-bold">House B pays a chepaer price for electricity than the market price</p>
+                  <p class="font-weight-bold">House B pays a cheaper price for electricity than the market price</p>
                 </div>
               </div>
-            </div>
-
+          </div>
 
         </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="/images/stock/family.jpg" data-speed="0.8">
+      <div class="container white-font text-left padding-top-medium padding-bottom-medium">
+
+          <div class="row padding-bottom-small">
+              <div class="col">
+                <!-- TODO add padding/margin -->
+                <h1 class="font-weight-bold">Empowering Homes</h1>
+              </div>
+            </div>
+    
+            <div class="row padding-bottom-small">
+              <div class="col">
+                <!-- TODO add padding/margin -->
+                <p class="font-weight-bold">Using only the safest and efficient technology, our team is devoted to providing the most convenient
+                  experience while helping you pay back your solar equipment faster than you thought possible.
+                </p>
+              </div>
+              <div class="col">
+
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col">
+                <!-- TODO add padding/margin -->
+                <a href="/faqs#finances"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>   
+              </div>
+            </div>
 
       </div>
     </div>
@@ -140,89 +183,109 @@
 
 
     <!-- Team and funding -->
-    <div class="parallax-window" data-parallax="scroll" data-image-src="/images/solar-panels.jpg">
+    <div class="container padding-top-medium padding-bottom-small" id="team">
 
-      <!-- Team -->
-      <div class="container text-center white-font padding-top-medium padding-bottom-medium" id=team>
-        <h1 class="padding-bottom-small">Meet the Team</h1>
-
-        <div class="row">
-            <div class="col">
-              <img src="/images/rene.jpeg" class="rounded-circle" alt="Cinque Terre" width="180" height="180"> 
-
-            </div>
-            <div class="col">
-              <img src="/images/romeo.jpeg" class="rounded-circle" alt="Cinque Terre" width="180" height="180"> 
-            </div>
-            <div class="col">
-              <img src="/images/manny.jpeg" class="rounded-circle" alt="Cinque Terre" width="180" height="180"> 
-            </div>
+      <!-- Title -->
+      <div class="row ">
+        <div class="col">
+          <!-- TODO add padding/margin -->
+          <h1 class="font-weight-bold padding-bottom-small text-center">Meet the Team</h1>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col">
-              Rene
-            </div>
-            <div class="col">
-              Romeo
-            </div>
-            <div class="col">
-              Manny
-            </div>
-        </div>
+      <div class="container-fluid">
+        <div class="row mx-auto padding-bottom-small">
 
-        <div class="row">
-            <div class="col">
-              <img src="/images/will.jpeg" class="rounded-circle" alt="Cinque Terre" width="180" height="180"> 
+          <div class="col mx-auto padding-bottom-small">
+            <div class="card team-card mx-auto">
+              <img class="card-img-top img-fluid grayscale" src="/images/team/rene.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Rene Garcia</h5>
+                <p class="card-text">Chief Executive Officer</p>
+                <a href="https://www.linkedin.com/in/ren%C3%A9-garc%C3%ADa-franceschini-409235b4/"><img src="/images/linkedin/Screen/2-Color/In-2C-28px-R.png"></a>
+              </div>
             </div>
-            <div class="col">
-              <img src="/images/kevin.jpg" class="rounded-circle" alt="Cinque Terre" width="180" height="180"> 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-              Will
-            </div>
-            <div class="col">
-              Kevin
-            </div>
-        </div>
-
-        <!-- Funding -->
-        <div class="row">
-          <div class="col">
-            Davis Projects for Peace
           </div>
-          <div class="col">
-            Sandbox
+
+          <div class="col mx-auto padding-bottom-small">
+            <div class="card team-card mx-auto">
+              <img class="card-img-top img-fluid grayscale" src="/images/team/romeo.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Romeo Flores</h5>
+                <p class="card-text">Cheif Technology Officer</p>
+                <a href="https://www.linkedin.com/in/romeo-flores-612853112/"><img src="/images/linkedin/Screen/2-Color/In-2C-28px-R.png"></a>
+              </div>
+            </div>
           </div>
+
+          <div class="col mx-auto padding-bottom-small">
+            <div class="card team-card mx-auto">
+              <img class="card-img-top img-fluid grayscale" src="/images/team/manny.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Emmanuel Perez</h5>
+                <p class="card-text">Chief Engineer</p>
+                <a href="https://www.linkedin.com/in/emanuel-perez-4079b462/"><img src="/images/linkedin/Screen/2-Color/In-2C-28px-R.png"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row mx-auto padding-bottom-medium">
+
+          <div class="col mx-auto padding-bottom-small">
+            <div class="card team-card mx-auto">
+              <img class="card-img-top img-fluid grayscale" src="/images/team/will.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">William Lopez-Cordero</h5>
+                <p class="card-text">Business Consultant</p>
+                <a href="https://www.linkedin.com/in/william-lopez-cordero-2081b881/"><img src="/images/linkedin/Screen/2-Color/In-2C-28px-R.png"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mx-auto padding-bottom-small">
+            <div class="card team-card mx-auto">
+              <img class="card-img-top img-fluid grayscale" src="/images/team/kevin.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Kevin Escobar Rodriguez</h5>
+                <p class="card-text">Software Developer</p>
+                <a href="https://www.linkedin.com/in/kevin-escobar-rodriguez-833168127/"><img src="/images/linkedin/Screen/2-Color/In-2C-28px-R.png"></a>
+              </div>
+            </div>
+          </div>
+          <!-- extra col-->
+          <!-- <div class="col"></div>  -->
+
+        </div>
+
+        <div class="row mx-auto text-center">
+          <div class="col padding-bottom-small">
+            <a href="http://www.davisprojectsforpeace.org/"><img class="medium-logo" src="/images/logos/projectsforpeace.jpg"></a>
+          </div>
+
+          <div class="col padding-bottom-small">
+              <a href="http://sandbox.mit.edu/"><img class="medium-logo" src="/images/logos/sandbox.png"></a>
+          </div>
+
         </div>
 
       </div>
     </div>
 
 
-
-
-    <!-- Funding -->
-    <div class="container text-center">
-
- 
+    <div class="footer">
+      <div class="container padding-top-small padding-bottom-small">
+        <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </div>
     </div>
-
-
-
-    <!-- TODO Create Footer -->
-    <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </body>
 
 <script src='packages/jquery/dist/jquery.min.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="/packages/parallax.js-1.5.0/parallax.js"></script>
 
-<!-- 
-<!-- Electricity Meter Icon made by DinosoftLabs [https://www.flaticon.com/authors/dinosoftlabs] from www.flaticon.com [www.flaticon.com] -->
 </html>
